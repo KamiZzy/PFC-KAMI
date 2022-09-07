@@ -1,0 +1,55 @@
+block includes
+
+
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='/bscss/bootstrap.min.css')
+    link(rel='stylesheet', href='/publico/css/layout.css')
+    
+    block linkscss
+
+    script(src='/bsjs/bootstrap.min.js')
+    script(src='/popperjs/popper.min.js')
+    script(src='/jquery/jquery.min.js')
+
+    block scriptsjs
+
+    block titulo_pagina
+
+  body 
+    header
+    nav.navbar.navbar-light.bg-secondary.fixed-top
+      .container-fluid
+        a.navbar-brand(href='/') PEI- Portal Esportivo do Instituto
+        button.navbar-toggler(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasNavbar', aria-controls='offcanvasNavbar')
+          span.navbar-toggler-icon
+        #offcanvasNavbar.offcanvas.offcanvas-end(tabindex='-1', aria-labelledby='offcanvasNavbarLabel')
+          .offcanvas-header
+            h5#offcanvasNavbarLabel.offcanvas-title Menu
+            button.btn-close.text-reset(type='button', data-bs-dismiss='offcanvas', aria-label='Close')
+          .offcanvas-body
+            ul.navbar-nav.justify-content-end.flex-grow-1.pe-3
+              li.nav-item
+                a.nav-link.active(aria-current='page', href='/Quemsomosnos') Quem somos n&oacute;s?
+              
+              
+    block principal 
+  BR
+  BR 
+  BR   
+  br
+  footer#footer.bg-light.text-center.text-lg-start
+      #divf.text-center.p-0(style='background-color: rgb(117, 116, 116')
+        a.logo(href="https://www.ifms.edu.br") 
+          img.logoIF(src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Instituto_Federal_de_Mato_Grosso_do_Sul_-_Marca_Vertical_2015.svg/1200px-Instituto_Federal_de_Mato_Grosso_do_Sul_-_Marca_Vertical_2015.svg.png', alt='')
+
+        | Orientadores: FABIO SILVA e LUIS SINÉSIO;
+        br
+        | Instituto Federal de Mato Grosso do Sul (IFMS)
+        br
+        | Projeto De Conclusão de Curso;
+        br
+        | 229B.  Kauã Kaminski e Pedro Bertoncelo;   

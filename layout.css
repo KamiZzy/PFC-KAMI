@@ -1,0 +1,18 @@
+
+.bg-light.text-center.text-lg-start{
+margin-bottom: 0%;
+}
+.logoIF{
+  float: left;
+  margin-left: 1%;
+  width: 95px;
+}
+footer{
+  justify-self: center ;
+  width: 100%;
+  margin-bottom: 100%;
+}
+h5{
+  color: white;
+}
+

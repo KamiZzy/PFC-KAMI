@@ -1,0 +1,63 @@
+extends layout 
+
+block linkscss
+  link(rel='stylesheet', href='/publico/css/inicio.css')
+
+block titulo_pagina
+  title=`PEI-INICIO`
+
+block principal
+  BR 
+  BR
+  BR 
+    h4
+      |Este site foi criado para a realização do PCC(Projeto de Conclusão de Curso).
+  BR
+    h4
+      |Em qualquer esporte que utiliza o corpo sempre haverá a necessidade de melhoramento dos músculos, sendo para tanto a prevenir machucados e lesões, tanto para ajudar a ficar melhor.
+  BR 
+    h1
+      |Esportes:
+  
+  #myCarousel2.carousel.slide(data-bs-ride='carousel')
+    .carousel-indicators
+      button.active(type='button', data-bs-target='#myCarousel2', data-bs-slide-to='0', aria-current='true', aria-label='Slide 1')
+      button(type='button', data-bs-target='#myCarousel2', data-bs-slide-to='1', aria-label='Slide 2')          
+    .carousel-inner
+      .carousel-item.active
+        .row
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/volei.png') 
+            h3 volei
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/fut.png') 
+            h3 Futebool  
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/baska.png') 
+            h3 Basketball
+      .carousel-item
+        .row
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/tenis.png') 
+            h3 Tenis
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/base.png') 
+            h3 Baseball
+          .col-lg-4
+            a.volei(href="http://localhost:8081/volei") 
+              img.volei1(src='/publico/imagens/americanfut.png') 
+            h3 Futebol Americano
+      button.carousel-control-prev(type='button', data-bs-target='#myCarousel2', data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      button.carousel-control-next(type='button', data-bs-target='#myCarousel2', data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next
+      .row 
+    
+      
